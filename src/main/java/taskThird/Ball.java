@@ -9,6 +9,11 @@ public class Ball extends Figure{
 
     @Override
     public double volume() {
-        return (double) 4/3*Figure.getPI()*Math.pow(radius,3);
+        if (checkPosVal(radius)){
+            return (double) 4/3*Figure.PI*Math.pow(radius,3);
+        }
+        else{
+            return 0;
+        }
     }
 }

@@ -5,13 +5,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         //1
-       /* int[] array = new int[]{16 ,5, -5, 8, 1, -9, -10, 0, 10, 20};
+       int[] array = new int[]{16 ,5, -5, 8, 1, -9, -10, 0, 10, 20};
         int[] sortedArray = new int[]{10, 8, 5,1};
         int[] sortArray = TaskFirst.sortArray(array);
 
         for (int i = 0; i < sortArray.length; i++){
             System.out.println(sortArray[i]);
-        }*/
+        }
 
         //2
         List<String> list = new ArrayList<>();
@@ -65,16 +65,16 @@ public class Main {
         }
 
        //3
-        /*List<Figure> figures = new ArrayList<>();
-        figures.add(new Cylinder(5, 10));
-        figures.add(new Cube(5));
-        figures.add(new Ball(5));
+        List<Figure> figures = new ArrayList<>();
+        figures.add(new Cylinder(3, 3));
+        figures.add(new Cube(3));
+        figures.add(new Ball(10));
 
         List<Figure> figures1 = Sort.sort(figures, sortType.DECREASE);
         for (Figure f : figures1){
             System.out.println(f.getClass().getName() + " " + f.volume());
         }
-*/
+
     }
 
 }

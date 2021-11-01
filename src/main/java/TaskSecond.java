@@ -5,11 +5,16 @@ import java.util.stream.Collectors;
 public class TaskSecond {
     public static  Map<String, Integer>  parsing(List<String> list, int count){
         HashMap<String, Integer> hashMapTags = new HashMap<>();
+
         for (String str : list){
+            if (str == null){
+                System.out.println("Значение null");
+                continue;
+            }
             String[] strings = str.split(" ");
             HashSet<String> worlds = new HashSet<>();
             for (int i = 0; i < strings.length; i++){
-                if (strings[i].contains("#") && strings[i].length() > 1){
+                if (strings[i].length() > 1 && strings[i].charAt(0) == '#'){
                     worlds.add(strings[i]);
                 }
             }

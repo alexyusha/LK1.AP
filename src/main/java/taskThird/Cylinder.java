@@ -11,6 +11,11 @@ public class Cylinder extends Figure{
 
     @Override
     public double volume() {
-        return Figure.getPI() * Math.pow(radius, 2) * high;
+        if (checkPosVal(radius, high)){
+            return Figure.PI * Math.pow(radius, 2) * high;
+        }
+        else{
+            return 0;
+        }
     }
 }
